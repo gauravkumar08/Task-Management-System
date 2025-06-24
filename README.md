@@ -57,3 +57,24 @@ Login Page
 
 ![image](https://github.com/user-attachments/assets/60b88632-6d5a-42f3-a1de-c2262af87238)
 
+Creating New Task
+
+![image](https://github.com/user-attachments/assets/03520f63-5921-4ae3-b5d3-8484f9fa955f)
+
+![image](https://github.com/user-attachments/assets/b269f3f6-ad60-48cb-b742-2757d4586441)
+
+![image](https://github.com/user-attachments/assets/1b15cdd9-d1d1-4bbf-aa66-6088812999d7)
+
+View Task
+
+![image](https://github.com/user-attachments/assets/2ff0213f-9ef7-48aa-af7d-93a26db1ad85)
+
+Edit Task
+
+![image](https://github.com/user-attachments/assets/bf5dab61-b245-41ff-b73f-ae4b4ef586d6)
+
+
+
+
+
+
