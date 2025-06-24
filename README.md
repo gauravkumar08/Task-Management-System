@@ -51,3 +51,5 @@ Register Page
 
 ![image](https://github.com/user-attachments/assets/5dcb77ce-df8d-4e0f-a08a-f68631cebad5)
 
+![image](https://github.com/user-attachments/assets/aba4b509-6a6b-4733-8ed2-96032756a0e3)
+
