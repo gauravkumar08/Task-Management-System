@@ -47,5 +47,7 @@ A simple task management system built with Node.js, Express, and MongoDB.
 
 # Results
 
-Register Page
-![image](https://github.com/user-attachments/assets/751bfff4-4f66-414b-bd94-f36b36d8ae75)
+Register Page 
+
+![image](https://github.com/user-attachments/assets/5dcb77ce-df8d-4e0f-a08a-f68631cebad5)
+
