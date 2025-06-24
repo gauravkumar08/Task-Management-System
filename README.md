@@ -44,4 +44,8 @@ A simple task management system built with Node.js, Express, and MongoDB.
    
    ```bash
    http://localhost:3000
-   
+
+# Results
+
+Register Page
+![image](https://github.com/user-attachments/assets/751bfff4-4f66-414b-bd94-f36b36d8ae75)
