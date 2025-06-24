@@ -44,5 +44,4 @@ A simple task management system built with Node.js, Express, and MongoDB.
    
    ```bash
    http://localhost:3000
-
    
