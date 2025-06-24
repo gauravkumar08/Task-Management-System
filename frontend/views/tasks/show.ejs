@@ -1,0 +1,167 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Task</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #83a4d4, #b6fbff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: #ffffff;
+      width: 90%;
+      max-width: 500px;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 0.5s ease;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .task-detail {
+      margin-bottom: 15px;
+    }
+
+    .task-detail strong {
+      display: inline-block;
+      width: 120px;
+      color: #444;
+    }
+
+    .priority-tag {
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 20px;
+      color: white;
+      text-transform: capitalize;
+    }
+
+    .priority-high {
+      background-color: red;
+    }
+
+    .priority-medium {
+      background-color: orange;
+    }
+
+    .priority-low {
+      background-color: green;
+    }
+
+    .back-btn {
+      display: block;
+      margin: 30px auto 0;
+      padding: 10px 20px;
+      background-color: #2575fc;
+      color: white;
+      text-align: center;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #1a5fd3;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Task Details</h2>
+
+    <div class="task-detail">
+      <strong>Title:</strong>
+      <span><%= task.title %></span>
+    </div>
+
+    <div class="task-detail">
+      <strong>Description:</strong>
+      <span><%= task.description || 'No description provided.' %></span>
+    </div>
+
+    <div class="task-detail">
+      <strong>Status:</strong>
+      <span><%= task.status %></span>
+    </div>
+
+    <div class="task-detail">
+      <strong>Priority:</strong>
+      <span class="priority-tag priority-<%= task.priority %>"><%= task.priority %></span>
+    </div>
+
+    <div class="task-detail">
+      <strong>Due Date:</strong>
+      <span><%= task.dueDate ? new Date(task.dueDate).toDateString() : 'No due date' %></span>
+    </div>
+
+    <a href="/tasks" class="back-btn">← Back to My Tasks</a>
+  </div>
+</body>
+</html>
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>View Task</title>
+  <link rel="stylesheet" href="/show-task.css" />
+</head>
+<body>
+  <div class="card">
+    <h2>Task Details</h2>
+
+    <div class="task-detail">
+      <strong>Title:</strong>
+      <span><%= task.title %></span>
+    </div>
+
+    <div class="task-detail">
+      <strong>Description:</strong>
+      <span><%= task.description || 'No description provided.' %></span>
+    </div>
+
+    <div class="task-detail">
+      <strong>Status:</strong>
+      <span><%= task.status %></span>
+    </div>
+
+    <div class="task-detail">
+      <strong>Priority:</strong>
+      <span class="priority-tag priority-<%= task.priority %>"><%= task.priority %></span>
+    </div>
+
+    <div class="task-detail">
+      <strong>Due Date:</strong>
+      <span><%= task.dueDate ? new Date(task.dueDate).toDateString() : 'No due date' %></span>
+    </div>
+
+    <a href="/tasks" class="back-btn">← Back to My Tasks</a>
+  </div>
+</body>
+</html>
+
+

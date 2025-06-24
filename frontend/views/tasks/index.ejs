@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tasks</title>
+  <link rel="stylesheet" href="/styles.css">
+  
+</head>
+<body>
+  <div class="container">
+    <div class="header-bar">
+      <h2>My Tasks</h2>
+      <a href="/logout" class="logout-btn">Logout</a>
+    </div>
+    <a href="/tasks/new" class="create-btn">Create New Task</a>
+    <ul>
+      <% if (tasks && tasks.length > 0) { %>
+        <% tasks.forEach(function(task) { %>
+          <li class="task-item <%= task.priority %>">
+            <strong><%= task.title %></strong>
+            <div>Status: <%= task.status %></div>
+            <div>Due Date: <%= task.dueDate ? new Date(task.dueDate).toDateString() : 'No due date' %></div>
+            <div class="actions">
+              <a href="/tasks/<%= task._id %>">View</a>
+              <a href="/tasks/<%= task._id %>/edit">Edit</a>
+              <form action="/tasks/<%= task._id %>?_method=DELETE" method="POST" style="display:inline">
+                <button type="submit" onclick="return confirm('Delete this task?')">Delete</button>
+              </form>
+              <form action="/tasks/<%= task._id %>/status" method="POST" style="display:inline">
+                <select name="status" onchange="this.form.submit()">
+                  <option value="pending" <%= task.status === 'pending' ? 'selected' : '' %>>Pending</option>
+                  <option value="completed" <%= task.status === 'completed' ? 'selected' : '' %>>Completed</option>
+                </select>
+              </form>
+            </div>
+          </li>
+        <% }); %>
+      <% } else { %>
+        <li>No tasks found</li>
+      <% } %>
+    </ul>
+  </div>
+</body>
+</html>
